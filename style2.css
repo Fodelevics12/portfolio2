@@ -1,0 +1,37 @@
+/ Önreflexió szövegek
+            switch(subject) {
+                case 'elektronika':
+                    reflexionText = "<h3>Elektronika Önreflexió:</h3><p>Az elektronika tantárgy során elsajátítottam az elektronikai áramkörök alapjait. Megtanultam a különböző logikai kapuk és az elektronikai komponensek működését, és gyakorlatban is alkalmaztam őket.</p>";
+                    break;
+                case 'mikrokontroller':
+                    reflexionText = "<h3>Mikrovezérlő programozás Önreflexió:</h3><p>Ez a tantárgy lehetőséget adott arra, hogy megismerkedjek a mikrokontrollerek működésével és programozásával. Rengeteget tanultam a programozási technikák és a hardver közötti kapcsolatokról.</p>";
+                    break;
+                case 'programozas':
+                    reflexionText = "<h3>Programozás alapjai Önreflexió:</h3><p>A programozás alapjai tantárgyban valóban megértettem a programozás alapvető elveit. A Python programozási nyelvet alaposan elsajátítottam, és fontos algoritmusokat ismerhettem meg.</p>";
+                    break;
+                case 'digitalis_aramkorok':
+                    reflexionText = "<h3>Digitális áramkörök Önreflexió:</h3><p>A digitális áramkörök tantárgyban a logikai kapuk működését és az áramkörök tervezését tanultuk. Nagyon érdekes volt megtervezni és kiépíteni egyszerű digitális rendszereket.</p>";
+                    break;
+                case 'adatbazis_kezelés':
+                    reflexionText = "<h3>Adatbázis-kezelés Önreflexió:</h3><p>Az adatbázis-kezelés tantárgy során a bonyolultabb adatbázisok tervezését és kezelését tanultam. Az SQL alapú lekérdezések és az adatbázis-menedzsment rendszerek kezelésének alapjait sikeresen elsajátítottam.</p>";
+                    break;
+                case 'halozatkezeles':
+                    reflexionText = "<h3>Hálózatkezelés Önreflexió:</h3><p>A hálózatkezelés során megismerkedtem a számítógépes hálózatok működésével, a különböző protokollokkal és eszközökkel. Az IP címzés és a hálózati eszközök konfigurálása számomra új kihívást jelentett, de sikeresen elsajátítottam.</p>";
+                    break;
+                case 'plc_programozas':
+                    reflexionText = "<h3>PLC programozás Önreflexió:</h3><p>A PLC programozás során fontos alapvető programozási ismereteket szereztem a programozható logikai vezérlőkkel kapcsolatban, és megtanultam alkalmazni őket az ipari automatizálásban.</p>";
+                    break;
+                case 'szamitogepes_szimulacio':
+                    reflexionText = "<h3>Számítógépes szimuláció Önreflexió:</h3><p>Ez a tantárgy lehetőséget adott arra, hogy különböző rendszereket modellezzek szimulációk segítségével, ami segített megérteni az ipari és informatikai rendszerek működését.</p>";
+                    break;
+                case 'munkavallaloi_ismeretek':
+                    reflexionText = "<h3>Munkavállalói ismeretek Önreflexió:</h3><p>A munkavállalói ismeretek idegen nyelven tantárgy segített jobban megérteni a munka világában használt nyelvi és kulturális sajátosságokat.</p>";
+                    break;
+                case 'iot':
+                    reflexionText = "<h3>IoT Önreflexió:</h3><p>Az IoT tantárgy során különböző okos eszközökkel és azok alkalmazásával foglalkoztunk. Nagy élményt nyújtott a gyakorlati alkalmazás és a modern technológiai trendek megértése.</p>";
+                    break;
+                case 'programfejlesztes':
+                    reflexionText = "<h3>Programfejlesztés Önreflexió:</h3><p>A programfejlesztés során különböző fejlesztési eszközöket és technikákat tanultam, ami lehetővé tette számomra, hogy komplex programokat írjak.</p>";
+                    break;
+                case 'robottechnika':
+                    reflexionText = "<h3>Robottechnika Önreflexió:</h3><p>A robottechnika tantárgy

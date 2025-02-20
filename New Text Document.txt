@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólió</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Fixált legördülő menü -->
+    <div id="yearSelectWrapper">
+        <h1>Portfólió: Tanulmányok</h1>
+        <label for="yearSelect">Válassz egy évfolyamot:</label>
+        <select id="yearSelect" onchange="showSubjectDetails()">
+            <option value="">-- Válassz --</option>
+            <option value="11">11. évfolyam</option>
+            <option value="12">12. évfolyam</option>
+            <option value="13">13. évfolyam</option>
+            <option value="14">önreflexió</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <!-- 11. évfolyam tartalom -->
+        <div id="11" class="content">
+            <h2>11. évfolyam</h2>
+            <h3>Első félév</h3>
+            <p><strong>Elektronika</strong>: Az elektronika tantárgy keretében az alapvető elektronikai áramköröket, azok működését és felépítését tanultuk.</p>
+            <img src="elektronika.jpg" alt="Elektronika áramkör">
+            <p><strong>Mikrovezérlő programozás</strong>: A Mikrovezérlő programozás során az alapvető mikrokontroller rendszerek működését és programozását tanultuk.</p>
+            <img src="mikrokontroller.jpg" alt="Mikrokontroller Programozás">
+
+            <h3>Második félév</h3>
+            <p><strong> programozás alapjai</strong>:A programozás alapjai tantárgy keretében elsajátítottam a Python és más programozási nyelvek alapjait, mint például a változók, adatstruktúrák, ciklusok és függvények használata, valamint a kódolási logika és hibakeresés alapvető technikáit. A tantárgy segített megérteni a programozás elméleti és gyakorlati aspektusait, alapvető algoritmusokat és a szoftverfejlesztés folyamatát..</p>
+            <img src="pyton.PNG" alt="Mikrokontroller Programozás">
+            <p><strong> Digitális áramkörök</strong>:A digitális áramkörök tantárgy során megismertem a digitális logikai alapelveket, mint a logikai kapuk (AND, OR, NOT), áramkörök tervezését és működését. Ezen kívül gyakorlatban is elsajátítottam az áramkörök elemzését és egyszerű digitális rendszerek, például számlálók és szorzók tervezését.</p>
+            <img src="mikrokontroller.jpg" alt="Mikrokontroller Programozás">
+        </div>
+
+        <!-- 12. évfolyam tartalom -->
+        <div id="12" class="content">
+            <h2>12. évfolyam</h2>
+            <h3>Első félév</h3>
+            <p><strong>Adatbázis-kezelés</strong>: Az adatbázis-kezelés tantárgyban mélyebb szintre léptünk, és bonyolultabb adatbázis rendszereket terveztünk.</p>
+            <img src="adatbkez.jpg" alt="Adatbázis Kezelés">
+
+            <p><strong>Hálózatkezelés</strong>: A hálózatkezelés tantárgy keretében az alapvető hálózati fogalmakat és eszközöket tanulmányoztuk.</p>
+            <img src="halozatkez.jpg" alt="Hálózatkezelés">
+
+            <h3>Második félév</h3>
+            <p><strong>PLC programozás</strong>: A PLC programozás során a programozható logikai vezérlőket tanulmányoztuk és alkalmaztuk.</p>
+            <img src="plc.jpg" alt="PLC programozás">
+
+            <p><strong>Számítógépes szimuláció</strong>: A számítógépes szimulációk segítségével különböző rendszereket modelleztünk.</p>
+            <img src="szamszimulacio.jpg" alt="Számítógépes szimuláció">
+        </div>
+
+        <!-- 13. évfolyam tartalom -->
+        <div id="13" class="content">
+            <h2>13. évfolyam</h2>
+            <h3>Első félév</h3>
+            <p><strong>Munkavállalói ismeretek idegen nyelven (német)</strong>: A munka világához kapcsolódó alapvető kifejezéseket és fogalmakat tanultunk német nyelven.</p>
+            <img src="munkavallalo.webp" alt="Munkavállalói ismeretek">
+
+            <p><strong>IoT (Internet of Things)</strong>: Az IoT tantárgyban az internetre csatlakozó eszközökkel, mint például okos otthonokkal és IoT alkalmazásokkal foglalkoztunk.</p>
+            <img src="Iot.jpg" alt="IoT technológia">
+
+            <h3>Második félév</h3>
+            <p><strong>Programfejlesztés</strong>: A programfejlesztés során különböző programozási technikákat és eszközöket tanulmányoztunk.</p>
+            <img src="programfejlesztes.jpg" alt="Programfejlesztés">
+
+            <p><strong>Robottechnika</strong>: A robottechnika tantárgyban a robotok irányításáról és működéséről tanultunk.</p>
+            <img src="robottechnika.jpg" alt="Robottechnika">
+
+            
+        </div>
+    </div>
+
+    <script>
+        function showSubjectDetails() {
+            var year = document.getElementById('yearSelect').value;
+            var contentDivs = document.querySelectorAll('.content');
+            
+            // Elrejtjük az összes tartalmat
+            contentDivs.forEach(function(div) {
+                div.classList.remove('show');
+            });
+
+            // Ha kiválasztottuk az évfolyamot, akkor megjelenítjük az adott tartalmat
+            if (year) {
+                document.getElementById(year).classList.add('show');
+            }
+        }
+    </script>
+
+</body>
+</html>
